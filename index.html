@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="add-course">
+
+        <div class="container">
+
+            <h1>CRUD System</h1>
+
+            <label for="">course name</label>
+            <input type="text" placeholder="course name" id="courseName">
+
+            <label for="">course category</label>
+            <input type="text" placeholder="course category" id="courseCategory">
+
+            <label for="">course price</label>
+            <input type="number" placeholder="course price" id="coursePrice">
+
+            <label for="" >course description</label>
+            <textarea id="courseDescription" placeholder="course description"></textarea> 
+
+            <button onclick="createCource()">Add Cource</button>
+            <button onclick="clearInput()">clear</button>
+
+        </div>
+
+        <input type="search" onkeyup="searchCourse()" placeholder="search... " id="search">
+
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="T_body">
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="main.js">
+
+    </script>
+
+    
+</body>
+
+</html>
